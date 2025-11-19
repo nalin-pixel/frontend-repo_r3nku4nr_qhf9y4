@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import AuthUI from './AuthUI'
 
 export default function Navbar() {
   const navigate = useNavigate()
@@ -9,9 +10,7 @@ export default function Navbar() {
           <img src="/flame-icon.svg" alt="logo" className="w-8 h-8" />
           <span className="text-white font-semibold">InfluenceConnect</span>
         </div>
-        <div className="text-xs text-blue-200/80">
-          Built with Flames Blue
-        </div>
+        <AuthUI />
       </div>
     </div>
   )
